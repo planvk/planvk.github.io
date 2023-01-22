@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>807</title>
+    <style>
+        .nav {
+            height: 60px;
+            border-top: 6px solid purple;
+            border-bottom: 2px solid grey;
+            background-color: black;
+            
+        }
+        .hos {
+            height: 60px;
+            width: 1000px;
+            float: left;
+            margin-left: 20px;
+
+        }
+        .logo {
+            width: 100px;
+            height: 60px;
+            float: left;
+            background-color: aqua;
+        }
+        *{
+                padding: 0px;
+                margin: 0px;
+            }
+
+            #main {
+                overflow: auto;
+                text-align: center;
+                margin-left: 10px;
+                width: 1400px;
+                margin-left: -15px;
+                float: left;
+            }
+
+            #kk {
+                text-decoration: none;
+                display: inline-block;
+                height: 60px;
+                width: 200px;
+                color: white;
+                
+                line-height: 40px;
+            }
+            ul{
+                list-style: none;
+            }
+
+            #list{
+                display: inline-block;
+                margin: 0px;
+                padding: 0px;
+                vertical-align: bottom;
+            }
+
+            #list>li{
+                float: left;
+            }
+
+            #list>li>ul{
+                display: none;
+                position: absolute;
+                background-color: blueviolet;
+            }
+
+            #list>li:hover ul{
+                display: block;
+            }
+
+            #kk:hover {
+                background-color: burlywood;
+            }
+        .search {
+            height: 60px;
+            width: 400px;
+            float: right;
+            background-color: coral;
+            
+        }
+
+       
+        #gg {
+            display: inline;
+            background-color: aquamarine;
+            float: right;
+            height: 22px;
+            width: 40px;
+            
+        } 
+        .d1 input {
+  width: 200px;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid darkorchid;
+  border-radius: 5px;
+  background: #F9F0DA;
+  color: #9E9C9C;
+  ;
+}
+.d1 button {
+  position: absolute; 
+  top: 0;
+  right: 90px;
+  width: 98px;
+  height: 42px;
+  margin-top: 8px;
+  border: none;
+  background-color: coral;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.d1 button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}                  
+.d1 {
+    height: 60px;
+    width: 100px;
+    float: right;
+    margin-right: 250px;
+}
+      
+        
+        .kc {
+            text-decoration: none;
+        }
+        .head {
+            width: 1200px;
+            height: 400px;
+            background-color: aqua;
+            margin-top: 20px;
+            margin-left: 230px;
+            border-radius: 20px;
+        }
+        .pic {
+            border-radius: 20px;
+        }
+        .three {
+            width: 1200px;
+            height: 700px;
+            background-color: darkslateblue;
+            margin-top: 40px;
+            margin-left: 230px;
+            border-radius: 20px;
+
+        }
+        .p1 {
+            width: 300px;
+            height: 500px;
+            background-color: blueviolet;
+            margin-left: 80px;
+            margin-top: 50px;
+            float: left;
+        }
+        .p2 {
+            width: 300px;
+            height: 500px;
+            background-color: blueviolet;
+            margin-left: 80px;
+            margin-top: 50px;
+            float: left;
+        }
+        .p3 {
+            width: 300px;
+            height: 500px;
+            background-color: blueviolet;
+            margin-left: 80px;
+            margin-top: 50px;
+            float: left;
+        }
+        .zhuanqu {
+            background-color: blanchedalmond;
+            height: 40px;
+            width: 150px;
+        }
+       
+            
+       .spp {
+        height: 50px;
+        width: 380px;
+       }
+       .kte {
+            height: 700px;
+            width: 1200px;
+            margin: 20px auto;
+            background-color: #d7ccb6;
+            margin-top: 50px;
+            border-radius: 20px;
+            
+        }
+        .kte1 {
+            width: 300px;
+            height: 500px;
+            background-color: #d7ccb6;
+            float: left;
+        }
+        .pao {
+            display: block;
+            height: 101px;
+            width: 300px;
+            background-color: #681414;
+            font-size: 20px;
+            font-style: inherit;
+            color: #d7ccb6;
+            text-decoration: none;
+            text-indent: 2em;
+            float: left;
+        }
+        .pao:hover {
+            background-color: coral;
+
+        }
+        #kv {
+            margin-top: 54px;
+        }
+        .zhuanqu2 {
+            width: 300px;
+            height: 80px;
+        }
+        .kte2 {
+            height: 700px;
+            width: 820px;
+  
+            float: right;
+        }
+        .p1 img {
+            cursor: pointer;
+            transition: all 0.6s;
+            -ms-transition: all 0.8s
+        }
+        .p1 img:hover {
+            transform: scale(1.2);
+            -ms-transform: scale(1.2);
+        }
+        .p2 img {
+            cursor: pointer;
+            transition: all 0.6s;
+            -ms-transition: all 0.8s
+        }
+        .p2 img:hover {
+            transform: scale(1.2);
+            -ms-transform: scale(1.2);
+        }
+        .p3 img {
+            cursor: pointer;
+            transition: all 0.6s;
+            -ms-transition: all 0.8s
+        }
+        .p3 img:hover {
+            transform: scale(1.2);
+            -ms-transform: scale(1.2);
+        }
+        .kte21 {
+            height: 400px;
+            width: 290px;
+            background-color: #681414;
+            float: left;
+            margin-top: 50px;
+            margin-left: 25px;
+        }
+        .kte22 {
+            height: 400px;
+            width: 390px;
+            background-color: #681414;
+            float: left;
+            margin-top: 50px;
+            margin-left: 80px;
+
+        }
+        .kte211 {
+            height: 350px;
+            width: 200px;
+            background-color: coral;
+        }
+        .kte212 {
+            height: 50px;
+            width: 290px;
+            background-color: aquamarine;
+        }
+        .kte221 {
+            height: 350px;
+            width: 390px;
+            background-color: coral;
+        }
+        .kte222 {
+            height: 50px;
+            width: 390px;
+            background-color: aquamarine;
+        }
+        .kte21 img {
+            cursor: pointer;
+            transition: all 0.6s;
+            -ms-transition: all 0.8s
+        }
+        .kte21 img:hover {
+            transform: scale(1.2);
+            -ms-transform: scale(1.2);
+        }
+        .kte22 img {
+            cursor: pointer;
+            transition: all 0.6s;
+            -ms-transition: all 0.8s
+        }
+        .kte22 img:hover {
+            transform: scale(1.2);
+            -ms-transform: scale(1.2);
+        }
+        .heng0 {
+            height: 150px;
+            width: 1200px;
+            margin-left: 220px;
+            float: left;
+
+        }
+        .heng0 img {
+            border-radius: 20px;
+        }
+        .ktebottom {
+            width: 760px;
+            height: 200px;
+            background-color: #681414;
+            float: left;
+            margin-top: 25px;
+            margin-left: 25px;
+        }
+        .big0 {
+            height: 600px;
+            width: 1200px;
+            float: left;
+            margin-left: 220px;
+            margin-top: 30px;
+        }
+        .big0 img {
+            border-radius: 20px;
+        }
+       .bigbottom {
+            height: 300px;
+            width: 1200px;
+            background-color: darkgreen;
+            float: left;
+            margin-left: 220px;
+            margin-top: 0px;
+            border-radius: 20px;
+       }
+      .bigbottom .lunbo ul {
+             list-style-type: none;
+
+      }
+      .lunbo ul li {
+        float: left;
+        margin: 50px 20px;
+      }
+
+      .lunbo ul li img {
+        border-radius: 20px;
+      }
+      .bottom h1{
+        font-weight: 800;
+        font-size: xx-large;
+        font-style: oblique;
+      } 
+      .gengduo0 {
+            height: 900px;
+            width: 1643px;
+            float: left;
+            margin-top: 80px;
+            background-color: white;
+
+      }
+      .gengduo1 {
+        height: 800px;
+        width: 1500px;
+        float: left;
+        margin-left: 100px;
+        margin-top: 50px;
+      }
+      .gengduo11 {
+        height: 570px;
+        width: 400px;
+        background-color: crimson;
+        margin-top: 20px;
+        float: left;
+        margin-left: 20px;
+      }
+      .gengduo12 {
+        height: 570px;
+        width: 400px;
+        background-color: crimson;
+        margin-top: 20px;
+        margin-left: 100px;
+        float: left;
+      }
+      .gengduo13 {
+        height: 570px;
+        width: 400px;
+        background-color: crimson;
+        margin-top: 20px;
+        margin-left: 100px;
+        float: left;
+      }
+      .gengduo111 {
+        height: 70%;
+        background-color: cadetblue;
+      }
+      .gengduo121 {
+        height: 70%;
+        background-color: cadetblue;
+      }
+      .gengduo131 {
+        height: 70%;
+        background-color: cadetblue;
+      }
+    .gengduo112 {
+        height: 30%;
+        background-color: rgb(202,50, 51);
+        font-size: 28px;
+        color: white;
+        text-indent: 2em;
+    }
+    
+    .gengduo122 {
+        height: 30%;
+        background-color: rgb(48, 79, 79);
+    }
+    .gengduo132 {
+        height: 30%;
+        background-color: rgb(70, 105, 102)
+    }
+    .zi {
+        font-size: 28px;
+        text-indent: 0.5em;
+        font-weight: 20px;
+    }
+    .gengduo122 {
+        height: 30%;
+        background-color: rgb(48, 79, 79);
+        font-size: 28px;
+        color: white;
+        text-indent: 2em;
+    }
+    .gengduo132 {
+        height: 30%;
+        background-color: rgb(70, 105, 102);
+        font-size: 28px;
+        
+        color: white;
+        text-indent: 2em;
+    }
+    .foot {
+        width: 100%;
+        height: 300px;
+        float: left;
+        background-color: dimgray;
+        margin-top: 20px;
+     }
+     .f1 {
+          height: 20px;
+          width: 220px;
+          margin-left: 700px;
+          margin-top: 60px;
+          float: left;
+          color: white;
+     }
+     .f2 {
+          height: 20px;
+          width: 300px;
+          margin-left: 700px;
+          margin-top: 5px;
+          float: left;
+          color: white;
+     }
+    .f3 {
+        height: 20px;
+        width: 300px;
+          margin-left: 700px;
+          margin-top: 5px;
+          float: left;
+          color: white;
+          text-decoration: none;
+          text-align: center;
+    }
+    .maodian {
+        height: 60px;
+        float: left;
+        width: 1643px;
+    }
+    .you {
+        float: right;
+        width: 60px;
+        height: 60px;
+        background-color: aliceblue;
+        margin-top: 30px;
+    }
+    .you a {
+        text-decoration: none;
+        color: cornflowerblue;
+    }
+    .denglu {
+        height: 50px;
+        width: 50px;
+        float: right;
+        background-color: #681414;
+        border-radius: 50%;
+    }
+
+    .denglu img {
+        border-radius: 50%;
+    }
+
+
+    </style>
+</head>
+<body background="p5.jpg">
+   
+    <div class="nav">
+
+        <div class="logo">
+            <img src="p6.png" alt="" width="200px" height="60px">
+        </div> 
+        
+        <div class="hos" id="a">
+        <div id="main">
+
+                      <ul id="list">
+                        <li>
+                            <a href="zhao.html" id="kk">jay专辑</a>
+                            <ul>
+                                <li><a href="#" id="kk">反方向的钟</a></li>
+                                <li><a href="zhao1.html" id="kk">一路向北</a></li>
+                                <li><a href="#" id="kk">明明就</a></li>
+                                <li><a href="#" id="kk">搁浅</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="tang.html" id="kk">轿车</a>
+                            <ul>
+                                <li><a href="#" id="kk">BMW</a></li>
+                                <li><a href="#" id="kk">凯迪拉克</a></li>
+                                <li><a href="#" id="kk">奔驰EQS</a></li>
+                                <li><a href="#" id="kk">创新BMW</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="1.html" id="kk">果蔬</a>
+                            <ul>
+                                <li><a href="#" id="kk">草莓</a</li>
+                                <li><a href="#" id="kk">苹果</a></li>
+                                <li><a href="#" id="kk">香蕉</a></li>
+                                <li><a href="#" id="kk">蔬菜</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" id="kk" >运动</a>
+                            <ul>
+                                <li><a href="#" id="kk">足球</a></li>
+                                <li><a href="#" id="kk">足球鞋</a></li>
+                                <li><a href="#" id="kk">球衣</a></li>
+                                <li><a href="#" id="kk">秋球星系列</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="liuyan.html" id="kk" >留言板</a>
+                            <ul>
+                                <li><a href="#" id="kk">联系客服</a></li>
+                                <li><a href="#" id="kk">赵汉琳经理</a></li>
+                                <li><a href="#" id="kk">唐公子</a></li>
+                            </ul>
+                        </li>
+                      </ul>
+        </div>
+        
+        </div>
+        <div class="denglu"><img src="p26.jpg" alt="" height="50px" width="50px"></div>
+
+        <div class="d1">
+            <form>
+                <input type="text" placeholder="807智能交易平台...">
+                <button type="submit"></button>"><a href="3/shop.html">.</a>
+                
+            </form> 
+        </div>
+    </div>
+    
+
+        
+    <div class="head">
+        <div class="big picture">
+            <img src="p7.png" alt="" width="1200px" height="400px" class="pic">
+        </div>
+    </div>
+
+
+    <div class="three" >
+        <div class="zhuanqu">
+            <div>
+               <img src="p8.png" alt="" height="80px" width="380px">
+            </div>
+        
+               
+               
+        </div>
+        <div class="p1">
+              <img src="p9.png" alt="" width="300px" height="450px">
+              <div class="spp">
+                <img src="p12.png" alt="" height="50px" width="300px">
+            </div>
+        </div>
+        
+
+        <div class="p2">
+       
+               <img src="p10.png" alt=""    width="300px" height="450px">
+               <div class="spp">
+                <img src="p13.png" alt="" height="50px" width="300px">
+               </div>
+        </div>
+
+        <div class="p3">
+               <img src="p11.png" alt="" width="300px" height="450px">
+               <div class="spp">
+                <img src="p14.png" alt="" height="50px" width="300px">
+            </div>
+                
+
+        </div>
+
+    </div>
+    <div class="kte" >
+        <div class="kte1">
+           
+            <div class="zhuanqu">
+                <div>
+                   <img src="p15.png" alt="" height="80px" width="380px">
+                </div>
+            
+            </div>
+            <a href="" class="pao" id="kv">世界杯周边</a>
+            <a href="" class="pao">足球鞋</a>
+            <a href="" class="pao">足球衣</a>
+            <a href="" class="pao">足球</a>
+            <a href="" class="pao">运动装备</a>
+            <a href="" class="pao">球星系列</a>
+        </div>
+
+        <div class="kte2">
+               <div class="kte21">
+                   <div class="kte211"><a href="3/shop.html"><img src="qy3.jpg" alt="" height="350px" width="290px"></a></div>
+                   <div class="kte212"><img src="p16.png" alt="" height="50px" width="290px"></div>
+                </div>
+
+                 <div class="kte22">
+                    <div class="kte221"><img src="qx1.jpg" alt="" height="350px" width="390px"></div>
+                    <div class="kte222"><img src="p17.png" alt="" width="390px" height="50px"></div>
+                </div>
+                <div class="ktebottom">
+                    <img src="P20.png" alt="" height="200px" width="700px">
+                </div>
+        </div>
+    </div>
+
+
+    <div class="heng0">
+        <img src="p18.png" alt="" height="150px" width="1200px">
+    </div>
+    <div class="big0">
+        <a href="1.html"><img src="p21.png" alt="" height="600px" width="1200px"></a>
+    </div>
+    <div class="bigbottom">
+        <marquee behavior="alternate" onmouseover="this.stop()" onmouseout="this.start()" class="lunbo">
+            <ul>
+            <li><img src="img/2-2.jpg" height="200px" width="200px"></li>
+            <li><img src="img/tu8.jpg" height="200px"></li>
+            <li><img src="img/tu13.jpg" height="200px" ></li>
+            <li><img src="img/tu4.jpg" height="200px" width="200px"></li>
+            </ul>
+        </marquee>
+    </div>
+
+    <div class="gengduo0">
+        
+        <div class="gengduo1">
+            <div class="zi">moreshopping</div>
+            <div class="gengduo11">
+                <div class="gengduo111"><img src="p23.png" alt="" height="400px" width="400px"></div>
+                <div class="gengduo112">圣诞礼物购买</div>
+            </div>
+            <div class="gengduo12">
+                <div class="gengduo121"><img src="p24.png" alt="" height="400px" width="400px"></div>
+                <div class="gengduo122">午间小食</div>
+            </div>
+            <div class="gengduo12">
+                <div class="gengduo131"><div class="gengduo121"><img src="p25.png" alt="" height="400px" width="400px"></div></div>
+                <div class="gengduo132">被套装</div>
+            </div>
+        </div>
+       
+
+    </div>
+    <div class="maodian">
+         <div class="you">
+               <a href="#a">顶部</a>
+         </div>
+    </div>
+    <div class="foot">
+        <div class="f1">版权所有@807智能科技公司</div>
+        <div class="f2">宇宙公安备案号：10200112315211</div>
+        <div class="f3"><a href="liuyan.html">建议我们</a></div>
+    </div>
+
+
+    
+    
+
+
+
+
+    
+  
+ 
+
+
+
+
+
+
+
+
+
+   
+</body>
+
+</html>
